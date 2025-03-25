@@ -18,3 +18,20 @@ export const FAQS = [
     { question: "How many Hustlin' Hardos NFTs will there be?", answer: "NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer additional benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects. Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this" },
     { question: "What is the utility and functionality of a Hustlin' Hardo NFT?", answer: "NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer additional benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects. Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this" },
 ];
+export const NAV_LINKS = ["ABOUT US", "MINTING", "ROADMAP", "TEAM", "FAQS"];
+export const SOCIAL_ICONS = ["discord", "twitter", "instagram", "media", "last"];
+export const STOCK_TICKERS = [
+    { name: "S&P", value: "-1.01%", color: "text-red-500" },
+    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+    { name: "AXD 100", value: "+0.13%", color: "text-yellow-400" },
+    { name: "S&P", value: "-1.01%", color: "text-red-500" },
+    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+    { name: "S&P", value: "-1.01%", color: "text-red-500" },
+    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+];

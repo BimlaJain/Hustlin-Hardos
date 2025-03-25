@@ -43,7 +43,7 @@ const Minting = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className=" bg-white">
       <div className="container max-w-[1140px] mx-auto">
       <h1 className="text-[80px] font-normal py-22 px-4">Minting</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 border border-black">
@@ -51,16 +51,16 @@ const Minting = () => {
           <p className="text-base text-black font-normal leading-[150%] mb-[15px] lg:max-w-[438px]">
               Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
           </p>
-            <div className="flex items-center border border-black max-w-[238px] mb-[35px]">
+            <div className="flex items-center  border border-black max-w-[238px] mb-[35px]">
             <button
-                className=" px-4 py-2 text-4xl"
+                className=" px-6 text-4xl text-center"
               onClick={() => setCount(count > 1 ? count - 1 : 1)}
             >
               -
             </button>
-            <span className="border-l border-r border-black text-4xl px-6 py-2">{count}</span>
+            <span className="border-l border-r border-black text-center text-4xl px-6">{count}</span>
             <button
-                className=" px-4 py-2 text-4xl"
+                className=" px-6 text-4xl text-center"
               onClick={() => setCount(count + 1)}
             >
               +
@@ -72,7 +72,7 @@ const Minting = () => {
             <p className="text-red-600 text-4xl font-semibold leading-[100%]">{timeLeft}</p>
           </div>
         </div>
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center">
           <Image
             src="/assets/images/png/news-boy-image.png"
             alt="Minting Character"

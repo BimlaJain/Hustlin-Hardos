@@ -14,8 +14,8 @@ const Navbar = () => {
         <Marquee gradient={false} speed={50}>
           {STOCK_TICKERS.map((item, index) => (
             <div key={index} className="mx-4 flex items-center">
-              <span className="mr-1">{item.name}</span>
-              <span className={`px-2 py-1 border rounded-[5px] ${item.color}`}>{item.value}</span>
+              <span className="font-normal mr-2 text-base uppercase">{item.name} </span>
+              <span className={`ml-1 px-2 py-1 border rounded-[5px] ${item.color}`}>{item.value}</span>
             </div>
           ))}
         </Marquee>

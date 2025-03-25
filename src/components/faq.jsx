@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FAQS } from "@/utils/helper";
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
   const contentRefs = useRef([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function FAQ() {
   }, [openIndex]);
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex(openIndex === index ? 0 : index);
   };
 
   return (
@@ -34,7 +34,7 @@ export default function FAQ() {
             </button>
             <div
               ref={(el) => (contentRefs.current[index] = el)}
-              className="overflow-hidden transition-all duration-300 ease-in-out"
+              className="overflow-hidden transition-all duration-500 ease-in-out"
               style={{ maxHeight: "0px" }}
             >
               <p className="mt-4 text-black font-normal md:text-base text-sm">{faq.answer}</p>

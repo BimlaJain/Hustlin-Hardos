@@ -18,9 +18,9 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-[#F8F6F2] text-black">
+    <div className="bg-white text-black border-b-2">
       <div className="container max-w-[1140px] mx-auto px-4">
-      <h2 className="text-[80px] mb-6 border-b-2 w-full py-[88px]">FAQs</h2>
+      <h2 className="text-[80px] mb-6 border-b-2 w-full  py-[88px]">FAQs</h2>
    
       <div className="border-2 border-black divide-y">
         {FAQS.map((faq, index) => (

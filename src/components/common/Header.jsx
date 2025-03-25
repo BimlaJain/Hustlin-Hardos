@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="body-img border-b border-black">
         <div className="container mx-auto">
           <div className="flex items-center justify-between max-w-[658px] ml-auto px-4 py-3">
-            <Link href="#">  <h1 className="text-xl font-bold text-black">Hustlin' Hardos</h1></Link>
+            <Link href="#">  <h1 className="text-xl font-bold text-black ff-moderno">Hustlin' Hardos</h1></Link>
           
             <div className="md:flex hidden items-center space-x-3">
               {SOCIAL_ICONS.map((icon, index) => (

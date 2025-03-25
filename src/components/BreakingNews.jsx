@@ -3,7 +3,7 @@ import React from 'react'
 const BreakingNews = () => {
   return (
     <div>
-          Hello
+      hello
     </div>
   )
 }

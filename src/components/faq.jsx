@@ -19,10 +19,12 @@ const Faq = () => {
 
     return (
         <div className=" text-black border-b-2">
-            <div className="container max-w-[1140px] mx-auto px-4">
-                <h2 className="text-[80px] mb-6 border-b-2 w-full  py-[88px]">FAQs</h2>
-
-                <div className="border-2 border-black divide-y">
+            <div className="container max-w-[1170px] mx-auto px-4">
+                <h2 className="text-[80px] mb-6  py-[88px]">FAQs</h2>
+            </div>
+            <div className="border border-black w-full"></div>
+            <div className="container max-w-[1170px] mx-auto px-4">
+                <div className="border-x-2 border-black divide-y">
                     {FAQS.map((faq, index) => (
                         <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-5">
                             <button

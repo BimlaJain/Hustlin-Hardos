@@ -14,12 +14,12 @@ const page = () => {
       <Header/>
       <Hero />
       <BreakingNews />
+      <LatestTweets />
       <Minting />
+      <Roadmap />
+      <Team/>
       <Faq />
       <Footer />
-      <Roadmap />
-      <LatestTweets />
-      <Team/>
     </div>
   )
 }

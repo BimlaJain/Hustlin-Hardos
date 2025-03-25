@@ -43,7 +43,7 @@ const Minting = () => {
   }, []);
 
   return (
-    <div className=" bg-white border-y-2">
+    <div className="  border-y-2">
       <div className="container max-w-[1140px] mx-auto">
       <h1 className="text-[80px] font-normal py-22 px-4">Minting</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 border border-black">

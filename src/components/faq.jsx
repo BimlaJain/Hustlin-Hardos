@@ -18,7 +18,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white text-black border-b-2">
+    <div className=" text-black border-b-2">
       <div className="container max-w-[1140px] mx-auto px-4">
       <h2 className="text-[80px] mb-6 border-b-2 w-full  py-[88px]">FAQs</h2>
    

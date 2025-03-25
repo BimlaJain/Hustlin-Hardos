@@ -20,7 +20,7 @@ const Navbar = () => {
           ))}
         </Marquee>
       </div>
-      <div className="bg-white border-b border-black">
+      <div className="body-img border-b border-black">
         <div className="container mx-auto">
           <div className="flex items-center justify-between max-w-[658px] ml-auto px-4 py-3">
             <Link href="#">  <h1 className="text-xl font-bold text-black">Hustlin' Hardos</h1></Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="border-b border-black bg-white">
+      <div className="border-b border-black body-img">
         <div className="hidden md:flex justify-center space-x-6">
           {NAV_LINKS.map((item, index) => (
             <Link key={index} href="#" className="px-4 py-2 border text-black border-black transition-all">

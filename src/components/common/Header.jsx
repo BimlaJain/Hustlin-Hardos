@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="border-b border-black body-img">
         <div className="hidden md:flex justify-center space-x-6">
           {NAV_LINKS.map((item, index) => (
-            <Link key={index} href="#" className="px-4 py-2 border text-black border-black transition-all">
+            <Link key={index} href="#" className="px-4 py-2 border-x-1 text-black border-black transition-all">
               {item}
             </Link>
           ))}

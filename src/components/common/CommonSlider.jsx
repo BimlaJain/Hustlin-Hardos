@@ -40,7 +40,7 @@ const CommonSlider = ({ data, title , isTweets }) => {
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="">
-                <div className={`border-black p-[26px]  flex flex-col team-bg ${index % 2 === 0 ? 'border-l-2 border-r-1 ' : 'border-l-1 border-r-2'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px]'}`}>
+                <div className={`border-black p-[26px]  flex flex-col  ${index % 2 === 0 ? 'border-l-2 border-r-1 ' : 'border-l-1 border-r-2'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px] team-bg'}`}>
                  
                   <Image src="/assets/images/png/hustlin-short-pic.png" alt='hustlin' width={88} height={88} className={`size-[88px] rounded-full mx-auto mb-4 ${isTweets ? 'hidden' : 'block'}`} />
                  

@@ -41,3 +41,51 @@ export const ROADMAP_DATA = [
         phase: "Phase 8"
     },
 ];
+
+export const TEAM_DATA = [
+    {
+        name: 'Executive Hardo',
+        description: 'Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant.',
+    },
+    {
+        name: 'Johnny Banjo',
+        description: 'The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry.',
+    },
+    {
+        name: 'Executive Hardo',
+        description: 'Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant.',
+    },
+    {
+        name: 'Johnny Banjo',
+        description: 'The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry.',
+    },
+    
+];
+
+export const TWEETS_DATA = [
+    {
+        name: 'Etiam eget',
+        description: 'Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.',
+        date: "23/02/2022",
+      
+    },
+    {
+        name: 'Venenatis.',
+        description: 'Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.',
+        date: "22/02/2022",
+        
+    },
+    {
+        name: 'Quis vulputate.',
+        description: 'Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.',
+        date: "20/02/2022",
+       
+    },
+    {
+        name: 'Etiam eget',
+        description: 'Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.',
+        date: "23/02/2022",
+       
+    },
+    
+];

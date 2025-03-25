@@ -8,3 +8,7 @@
 .body-img{
  background-image: url("/assets/images/webp/bg.webp");
 }
+
+.team-bg{
+  background-image: url("/assets/images/png/team-bg.png");
+}

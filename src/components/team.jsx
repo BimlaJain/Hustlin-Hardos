@@ -1,11 +1,13 @@
 import React from 'react'
+import { TEAM_DATA } from '@/utils/helper'
+import CommonSlider from './common/CommonSlider'
 
-const team = () => {
-  return (
-    <div>
-          Hello
-    </div>
-  )
+const Team = () => {
+    return (
+        <>
+            <CommonSlider data={TEAM_DATA} title="Team" isTweets={false} />
+        </>
+    )
 }
 
-export default team
+export default Team

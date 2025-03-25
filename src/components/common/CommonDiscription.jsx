@@ -3,7 +3,7 @@ import React from 'react'
 const CommonDiscription = () => {
   return (
     <div>
-      Hell
+      Hello
     </div>
   )
 }

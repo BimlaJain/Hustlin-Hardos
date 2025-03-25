@@ -23,10 +23,13 @@ const Navbar = () => {
       <div className="bg-white border-b border-black">
         <div className="container mx-auto">
           <div className="flex items-center justify-between max-w-[658px] ml-auto px-4 py-3">
-            <h1 className="text-xl font-bold text-black">Hustlin' Hardos</h1>
+            <Link href="#">  <h1 className="text-xl font-bold text-black">Hustlin' Hardos</h1></Link>
+          
             <div className="md:flex hidden items-center space-x-3">
               {SOCIAL_ICONS.map((icon, index) => (
-                <Image className="cursor-pointer" key={index} src={`/assets/images/svg/${icon}.svg`} alt={icon} width={24} height={24} />
+                <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
+                  <Image className="cursor-pointer" src={`/assets/images/svg/${icon.name}.svg`} alt={icon.name} width={24} height={24} />
+                </Link>
               ))}
               <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all">
                 CONNECT WALLET

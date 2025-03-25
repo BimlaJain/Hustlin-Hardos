@@ -19,7 +19,13 @@ export const FAQS = [
     { question: "What is the utility and functionality of a Hustlin' Hardo NFT?", answer: "NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer additional benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects. Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this" },
 ];
 export const NAV_LINKS = ["ABOUT US", "MINTING", "ROADMAP", "TEAM", "FAQS"];
-export const SOCIAL_ICONS = ["discord", "twitter", "instagram", "media", "last"];
+export const SOCIAL_ICONS = [
+    { name: "discord", link: "https://discord.com" },
+    { name: "twitter", link: "https://twitter.com" },
+    { name: "instagram", link: "https://instagram.com" },
+    { name: "media", link: "#" }, // Replace "#" with the actual link
+    { name: "last", link: "#" } // Replace "#" with the actual link
+];
 export const STOCK_TICKERS = [
     { name: "S&P", value: "-1.01%", color: "text-red-500" },
     { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },

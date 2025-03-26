@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 import Header from '@/components/common/Header'
 import Roadmap from '@/components/Roadmap'
 import LatestTweets from '@/components/LatestTweets'
-import Team from '@/components/team'
 import Faq from '@/components/faq'
+import Team from '@/components/team'
 
 const page = () => {
   return (

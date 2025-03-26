@@ -62,7 +62,7 @@ const Minting = () => {
               >
                 -
               </button>
-              <span className="border-l border-r border-black py-1 text-center leading-[100%] text-4xl px-6">{count}</span>
+              <span className="border-l border-r border-black py-1 text-center font-semibold leading-[100%] text-4xl px-6">{count}</span>
               <button
                 className=" px-6 text-4xl text-center py-1"
                 onClick={() => setCount(count + 1)}
@@ -72,7 +72,7 @@ const Minting = () => {
             </div>
             <button className="bg-[#FFD600] px-[14px] py-[9px] text-black text-sm font-semibold border-2 border-black">MINT NOW</button>
             <div className="mt-9">
-              <p className="text-green-600 font-semibold tet-lg">Time Left</p>
+              <p className="text-green-600 font-semibold text-lg">Time Left</p>
               <p className="text-red-600 text-4xl font-semibold leading-[100%]">{timeLeft}</p>
             </div>
           </div>

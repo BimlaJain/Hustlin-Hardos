@@ -111,7 +111,7 @@ export const FAQS = [
 export const NAV_LINKS = ["ABOUT US", "MINTING", "ROADMAP", "TEAM", "FAQS"];
 export const SOCIAL_ICONS = [
     { name: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
-    { name: "twitter", img: "assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
+    { name: "twitter-two", img: "/assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
     { name: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
     { name: "media", img: "assets/images/svg/media.svg", link: "#" },
     { name: "last", img: "assets/images/svg/last.svg", link: "#" } 

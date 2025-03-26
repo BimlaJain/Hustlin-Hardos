@@ -90,10 +90,10 @@ export const TWEETS_DATA = [
     
 ];
 export const COUNT_LIST = [
-    { label: "Etiam eget", endValue: 42 },
-    { label: "Tristique.", endValue: 42 },
-    { label: "Aliquet ac.", endValue: 42 },
-    { label: "Tincidunt.", endValue: 42 }
+    { name: "Etiam eget", endValue: 42 },
+    { name: "Tristique.", endValue: 42 },
+    { name: "Aliquet ac.", endValue: 42 },
+    { name: "Tincidunt.", endValue: 42 }
 ];
 export const FAQS = [
     {
@@ -110,11 +110,11 @@ export const FAQS = [
 ];
 export const NAV_LINKS = ["ABOUT US", "MINTING", "ROADMAP", "TEAM", "FAQS"];
 export const SOCIAL_ICONS = [
-    { name: "discord", link: "https://discord.com" },
-    { name: "twitter", link: "https://twitter.com" },
-    { name: "instagram", link: "https://instagram.com" },
-    { name: "media", link: "#" }, // Replace "#" with the actual link
-    { name: "last", link: "#" } // Replace "#" with the actual link
+    { name: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
+    { name: "twitter", img: "assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
+    { name: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
+    { name: "media", img: "assets/images/svg/media.svg", link: "#" },
+    { name: "last", img: "assets/images/svg/last.svg", link: "#" } 
 ];
 export const STOCK_TICKERS = [
     { name: "S&P", value: "-1.01%", color: "text-red-500" },

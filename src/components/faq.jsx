@@ -20,26 +20,26 @@ const Faq = () => {
     return (
         <div className=" text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
-                <h2 className="text-[80px] mb-6  py-[88px]">FAQs</h2>
+                <h2 className="lg:text-[80px] md:text-6xl text-5xl font-normal leading-[104%] mb-6 lg:py-18 md:py-10 py-7">Faqs</h2>
             </div>
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">
                 <div className="border-x-2 border-black divide-y">
                     {FAQS.map((faq, index) => (
-                        <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-5">
+                        <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-3">
                             <button
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full text-left md:text-2xl text-lg font-semibold flex justify-between items-center"
                             >
                                 {faq.question}
-                                <span className="text-base font-normal">{openIndex === index ? "-" : "+"}</span>
+                                <span className="text-2xl font-normal">{openIndex === index ? "-" : "+"}</span>
                             </button>
                             <div
                                 ref={(el) => (contentRefs.current[index] = el)}
                                 className="overflow-hidden transition-all duration-500 ease-in-out"
                                 style={{ maxHeight: "0px" }}
                             >
-                                <p className="mt-4 text-black font-normal md:text-base text-sm">{faq.answer}</p>
+                                <p className="md:mt-4 mt-2 text-black font-normal max-w-[992px] md:text-base text-sm">{faq.answer}</p>
                             </div>
                         </div>
                     ))}

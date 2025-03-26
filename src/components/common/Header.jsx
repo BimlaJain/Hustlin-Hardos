@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-black flex flex-col items-center py-4 space-y-2">
+        <div className="md:hidden body-img border-b border-black flex flex-col items-center py-4 space-y-2">
           {NAV_LINKS.map((item, index) => (
             <Link key={index} href="#" className="px-4 py-2 text-black border border-black w-3/4 text-center">
               {item}

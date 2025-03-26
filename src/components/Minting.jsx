@@ -44,7 +44,7 @@ const Minting = () => {
   }, []);
 
   return (
-    <div className="  border-b-2">
+    <div id="minting" className=" border-b-2">
       <div className="container max-w-[1172px] mx-auto px-4">
      <CommonHeading MyText="Minting"/>
       </div>

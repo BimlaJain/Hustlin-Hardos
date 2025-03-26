@@ -12,7 +12,7 @@ const Roadmap = () => {
     };
 
     return (
-        <>
+        <div id='roadmap'>
             <div className='container max-w-[1172px] mx-auto px-4'> 
                 <CommonHeading MyText='Roadmap'/>
             </div>
@@ -23,7 +23,7 @@ const Roadmap = () => {
                 </div>
                 {ROADMAP_DATA.map((item, index) => (
                     <div key={index} className={` flex w-full items-start ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                        <div className={`relative md:w-1/2 w-full  rounded-lg hover:shadow-md ${index % 2 === 0 ? 'justify-end lg:pl-[75px] md:pl-9' : 'justify-start lg:pr-[75px] pr-5 lg:pl-9'} :flex-row flex-col`}>
+                        <div className={`relative md:w-1/2 w-full  ${index % 2 === 0 ? 'justify-end lg:pl-[75px] md:pl-9' : 'justify-start lg:pr-[75px] pr-5 lg:pl-9'} :flex-row flex-col`}>
                             <p className='md:text-sm text-xs font-normal max-md:mt-6 mb-2'>{ item.phase}</p>
                             <h2 className="lg:text-4xl text-2xl leading-[110%] font-semibold mb-2">{item.title}</h2>
                             <p className={`text-black font-normal md:text-base text-sm overflow-hidden transition-all duration-300 ${expanded === index ? 'max-h-full' : 'lg:max-h-[190px] max-h-20'}`}>{item.description}</p>
@@ -41,7 +41,7 @@ const Roadmap = () => {
 
             </div>
             <div className='border border-black w-full'></div>
-        </>
+        </div>
     );
 };
 

@@ -55,7 +55,7 @@ const Minting = () => {
             <p className="text-base text-black font-normal leading-[150%] mb-[15px] lg:max-w-[438px] pr-2">
               Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
             </p>
-            <div className="flex items-center  border-2 border-black max-w-[238px] mb-[35px]">
+            <div className="flex items-center  border-2 border-black max-w-[238px] lg:mb-[35px] mb-3">
               <button
                 className=" px-6 text-4xl py-1 text-center cursor-pointer"
                 onClick={() => setCount(count > 1 ? count - 1 : 1)}
@@ -71,7 +71,7 @@ const Minting = () => {
               </button>
             </div>
             <button className="bg-[#FFD600] px-[14px] py-[9px] text-black text-sm font-semibold border-2 hover:bg-white transition-all duration-500 ease-linear cursor-pointer border-black">MINT NOW</button>
-            <div className="mt-9">
+            <div className="lg:mt-9 mt-3">
               <p className="text-green-600 font-semibold text-lg">Time Left</p>
               <p className="text-red-600 text-4xl font-semibold leading-[100%]">{timeLeft}</p>
             </div>

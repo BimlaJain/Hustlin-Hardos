@@ -19,7 +19,7 @@ const Roadmap = () => {
             <div className='border-b-2 border-black w-full'></div>
             <div className="relative flex flex-col items-center container max-w-[1172px] mx-auto max-xl:px-4 pl-4 xl:border-x-2 lg:pt-[99px] pt-10 xl:pb-[186px] lg:pb-[120px] md:pb-[70px] pb-16">
                 <div className="absolute top-0 xl:h-[1850px] lg:h-[1900px] md:h-[1300px] h-[1440px] max-md:right-[7%]">
-                    <Image src="/assets/images/svg/down-arrow.svg" alt="down-arrow" width={5} height={1689} className='w-4 h-full  lg:mt-[150px] mt-10 mr-3 '/>
+                    <Image src="/assets/images/svg/down-arrow.svg" alt="down-arrow" width={5} height={1689} className='w-4 h-full  lg:mt-[150px] mt-10 xl:mr-3 '/>
                 </div>
                 {ROADMAP_DATA.map((item, index) => (
                     <div key={index} className={` flex w-full items-start ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>

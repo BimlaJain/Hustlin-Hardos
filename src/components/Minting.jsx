@@ -55,22 +55,22 @@ const Minting = () => {
             <p className="text-base text-black font-normal leading-[150%] mb-[15px] lg:max-w-[438px] pr-2">
               Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
             </p>
-            <div className="flex items-center  border border-black max-w-[238px] mb-[35px]">
+            <div className="flex items-center  border-2 border-black max-w-[238px] mb-[35px]">
               <button
-                className=" px-6 text-4xl py-1 text-center"
+                className=" px-6 text-4xl py-1 text-center cursor-pointer"
                 onClick={() => setCount(count > 1 ? count - 1 : 1)}
               >
                 -
               </button>
-              <span className="border-l border-r border-black py-1 text-center font-semibold leading-[100%] text-4xl px-6">{count}</span>
+              <span className="border-l-2 border-r-2 border-black py-1 text-center font-semibold leading-[100%] text-4xl px-6">{count}</span>
               <button
-                className=" px-6 text-4xl text-center py-1"
+                className=" px-6 text-4xl text-center py-1 cursor-pointer"
                 onClick={() => setCount(count + 1)}
               >
                 +
               </button>
             </div>
-            <button className="bg-[#FFD600] px-[14px] py-[9px] text-black text-sm font-semibold border-2 border-black">MINT NOW</button>
+            <button className="bg-[#FFD600] px-[14px] py-[9px] text-black text-sm font-semibold border-2 hover:bg-white transition-all duration-500 ease-linear cursor-pointer border-black">MINT NOW</button>
             <div className="mt-9">
               <p className="text-green-600 font-semibold text-lg">Time Left</p>
               <p className="text-red-600 text-4xl font-semibold leading-[100%]">{timeLeft}</p>
@@ -82,7 +82,7 @@ const Minting = () => {
               alt="Minting Character"
               width={400}
               height={400}
-              className="lg:w-full lg:h-full"
+              className="w-full lg:h-full pointer-events-none"
             />
           </div>
         </div>

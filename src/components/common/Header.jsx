@@ -14,7 +14,7 @@ const Navbar = () => {
         <Marquee gradient={false} speed={50}>
           {STOCK_TICKERS.map((item, index) => (
             <div key={index} className="mr-[62px] flex items-center">
-              <span className="font-normal mr-2 text-base uppercase">{item.name} </span>
+              <span className="font-normal mr-2 text-base ">{item.name} </span>
               <span className={`ml-1 px-1 py-[2px] border rounded-[5px] ${item.color}`}>{item.value}</span>
             </div>
           ))}
@@ -31,7 +31,7 @@ const Navbar = () => {
                   <Image className="cursor-pointer" src={icon.img} alt={icon.name} width={24} height={24} />
                 </Link>
               ))}
-              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all">
+              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-white cursor-pointer transition-all">
                 CONNECT WALLET
               </button>
             </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className="flex space-x-3 mt-4">
             {SOCIAL_ICONS.map((icon, index) => (
               <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                <Image className="cursor-pointer" src={icon.img} alt={icon.name} width={24} height={24} />
+                <Image className="cursor-pointer hover:shadow-lg" src={icon.img} alt={icon.name} width={24} height={24} />
               </Link>            ))}
           </div>
           <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all mt-4">

@@ -13,8 +13,8 @@ const CommonSlider = ({ data, title , isTweets }) => {
     <div >
       <div className="container max-w-[1172px] mx-auto px-4 relative">
         <h2 className={`lg:text-[80px] md:text-6xl text-5xl leading-[104%] font-normal  lg:py-[89px] md:py-10 py-7  text-black ${isTweets ? 'uppercase' : 'none'}`}>{title}</h2>
-        <button className="custom-prev absolute  top-[45%] xl:right-[5%] sm:right-[10%] right-[15%] z-10 w-[18px] h-9"><Image src="/assets/images/svg/left-arrow.svg" alt='left-arrow' width={18} height={36} /></button>
-        <button className="custom-next absolute  top-[45%] right-[4%] xl:right-0 z-10 w-[18px] h-9"><Image src="/assets/images/svg/right-arrow.svg" alt='right-arrow' width={18} height={36} /></button>
+        <button className="custom-prev absolute  top-[45%] xl:right-[5%] sm:right-[10%] cursor-pointer right-[15%] z-10 w-[18px] h-9"><Image src="/assets/images/svg/left-arrow.svg" alt='left-arrow' width={18} height={36} /></button>
+        <button className="custom-next absolute  top-[45%] right-[4%] xl:right-0 z-10 cursor-pointer w-[18px] h-9"><Image src="/assets/images/svg/right-arrow.svg" alt='right-arrow' width={18} height={36} /></button>
       </div>
       <div className='border border-black w-full'></div>
       <div className="container max-w-[1172px] mx-auto px-4">
@@ -44,7 +44,7 @@ const CommonSlider = ({ data, title , isTweets }) => {
                  
                   <Image src="/assets/images/png/hustlin-short-pic.png" alt='hustlin' width={88} height={88} className={`size-[88px] rounded-full mx-auto mb-4 ${isTweets ? 'hidden' : 'block'}`} />
                  
-                  <h3 className={`md:text-4xl text-3xl pb-4 text-center ${isTweets ? 'text-left text-black font-semibold' : 'text-center text-[#70675F] font-[900]'}`}>{item.name}</h3>
+                  <h3 className={`md:text-4xl text-3xl text-center ${isTweets ? 'text-left text-black font-semibold pb-2' : 'text-center text-[#70675F] font-[900] pb-4'}`}>{item.name}</h3>
                   <div className={`flex gap-[11px] pb-3 ${isTweets ? 'block' : 'hidden'}`}>
                     <Image src="/assets/images/svg/twitter.svg" alt='twitter' width={22} height={18} />
                     <p className={`text-sm font-normal`}>{ item.date}</p>

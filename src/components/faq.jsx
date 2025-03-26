@@ -30,10 +30,10 @@ const Faq = () => {
                         <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-3">
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full text-left md:text-2xl text-lg font-semibold flex justify-between items-center"
+                                className="w-full text-left md:text-2xl cursor-pointer text-lg font-semibold flex justify-between items-center "
                             >
                                 {faq.question}
-                                <span className="text-2xl font-normal">{openIndex === index ? "-" : "+"}</span>
+                                <span className="text-2xl font-normal cursor-pointer">{openIndex === index ? "-" : "+"}</span>
                             </button>
                             <div
                                 ref={(el) => (contentRefs.current[index] = el)}

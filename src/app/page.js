@@ -11,7 +11,7 @@ import Faq from '@/components/faq'
 
 const page = () => {
   return (
-    <div>
+    <>
       <Header/>
       <Hero />
       <BreakingNews />
@@ -21,7 +21,7 @@ const page = () => {
       <Team/>
       <Faq />
       <Footer />
-    </div>
+    </>
   )
 }
 

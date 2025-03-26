@@ -6,11 +6,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-import CommonHeading from './CommonHeading';
 
 const CommonSlider = ({ data, title , isTweets }) => {
   return (
-    <div >
+    <>
       <div className="container max-w-[1172px] mx-auto px-4 relative">
         <h2 className={`lg:text-[80px] md:text-6xl text-5xl leading-[104%] font-normal  lg:py-[89px] md:py-10 py-7  text-black ${isTweets ? 'uppercase' : 'none'}`}>{title}</h2>
         <button className="custom-prev absolute  top-[45%] xl:right-[5%] sm:right-[10%] cursor-pointer right-[15%] z-10 w-[18px] h-9"><Image src="/assets/images/svg/left-arrow.svg" alt='left-arrow' width={18} height={36} /></button>
@@ -58,7 +57,7 @@ const CommonSlider = ({ data, title , isTweets }) => {
         </Swiper>
       </div>
       <div className='border border-black w-full'></div>
-    </div>
+    </>
   );
 };
 

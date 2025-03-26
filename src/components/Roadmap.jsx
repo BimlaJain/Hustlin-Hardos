@@ -12,7 +12,7 @@ const Roadmap = () => {
     };
 
     return (
-        <div>
+        <>
             <div className='container max-w-[1172px] mx-auto px-4'> 
                 <CommonHeading MyText='Roadmap'/>
             </div>
@@ -41,7 +41,7 @@ const Roadmap = () => {
 
             </div>
             <div className='border border-black w-full'></div>
-        </div>
+        </>
     );
 };
 

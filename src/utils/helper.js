@@ -59,7 +59,7 @@ export const TEAM_DATA = [
         name: 'Johnny Banjo',
         description: 'The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry.',
     },
-    
+
 ];
 
 export const TWEETS_DATA = [
@@ -67,34 +67,35 @@ export const TWEETS_DATA = [
         name: 'Etiam eget',
         description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
-      
+
     },
     {
         name: 'Venenatis.',
         description: 'Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.',
         date: "22/02/2022",
-        
+
     },
     {
         name: 'Quis vulputate.',
         description: 'Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.',
         date: "20/02/2022",
-       
+
     },
     {
         name: 'Etiam eget',
         description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
-       
+
     },
-    
 ];
+
 export const COUNT_LIST = [
     { name: "Etiam eget", endValue: 42 },
     { name: "Tristique.", endValue: 42 },
     { name: "Aliquet ac.", endValue: 42 },
     { name: "Tincidunt.", endValue: 42 }
 ];
+
 export const FAQS = [
     {
         question: "What is an NFT?",
@@ -108,14 +109,17 @@ export const FAQS = [
     { question: "How many Hustlin' Hardos NFTs will there be?", answer: "NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer additional benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects. Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this" },
     { question: "What is the utility and functionality of a Hustlin' Hardo NFT?", answer: "NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with blockchain-managed ownership that users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer additional benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects. Think of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this" },
 ];
+
 export const NAV_LINKS = ["ABOUT US", "MINTING", "ROADMAP", "TEAM", "FAQS"];
+
 export const SOCIAL_ICONS = [
     { name: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
     { name: "twitter-two", img: "/assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
     { name: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
     { name: "media", img: "assets/images/svg/media.svg", link: "#" },
-    { name: "last", img: "assets/images/svg/last.svg", link: "#" } 
+    { name: "last", img: "assets/images/svg/last.svg", link: "#" }
 ];
+
 export const STOCK_TICKERS = [
     { name: "S&P", value: "-1.01%", color: "text-red-500" },
     { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },

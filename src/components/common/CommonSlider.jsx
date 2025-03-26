@@ -13,8 +13,8 @@ const CommonSlider = ({ data, title , isTweets }) => {
     <div >
       <div className="container max-w-[1172px] mx-auto px-4 relative">
         <h2 className={`lg:text-[80px] md:text-6xl text-5xl leading-[104%] font-normal  lg:py-[89px] md:py-10 py-7  text-black ${isTweets ? 'uppercase' : 'none'}`}>{title}</h2>
-        <button className="custom-prev absolute  top-[45%] xl:right-[5%] sm:right-[10%] right-[15%] z-10"><Image src="/assets/images/svg/left-arrow.svg" alt='left-arrow' width={18} height={36} /></button>
-        <button className="custom-next absolute  top-[45%] right-[4%] xl:right-0 z-10"><Image src="/assets/images/svg/right-arrow.svg" alt='right-arrow' width={18} height={36} /></button>
+        <button className="custom-prev absolute  top-[45%] xl:right-[5%] sm:right-[10%] right-[15%] z-10 w-[18px] h-9"><Image src="/assets/images/svg/left-arrow.svg" alt='left-arrow' width={18} height={36} /></button>
+        <button className="custom-next absolute  top-[45%] right-[4%] xl:right-0 z-10 w-[18px] h-9"><Image src="/assets/images/svg/right-arrow.svg" alt='right-arrow' width={18} height={36} /></button>
       </div>
       <div className='border border-black w-full'></div>
       <div className="container max-w-[1172px] mx-auto px-4">
@@ -50,7 +50,7 @@ const CommonSlider = ({ data, title , isTweets }) => {
                     <p className={`text-sm font-normal`}>{ item.date}</p>
                   </div>
                   <p className={` ${isTweets ? 'text-left ' : 'text-center '}text-center  max-w-[407px] mx-auto`}>{item.description}</p>
-                  <p className='underline font-normal text-sm pt-3'>Read More ...</p>
+                  <p className={`underline font-normal text-sm pt-3 ${isTweets ? 'block' : 'hidden'}`}>Read More ...</p>
                 </div>
               </div>
             </SwiperSlide>

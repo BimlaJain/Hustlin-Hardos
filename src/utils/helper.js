@@ -31,12 +31,12 @@ export const ROADMAP_DATA = [
         phase: "Phase 6"
     },
     {
-        title: 'Swapping Individual Attributes',
+        title: 'Future Developments',
         description: 'It wouldn’t make sense to build one of the best online communities and not actively listen to its suggestions. As such, we also plan to execute against some community-generated ideas, delivering against the priorities of those who made Hustlin’ Hardos a success',
         phase: "Phase 7"
     },
     {
-        title: 'Future Developments',
+        title: 'Swapping Individual Attributes',
         description: 'Building a wardrobe app where you can secondary sales',
         phase: "Phase 8"
     },
@@ -65,7 +65,7 @@ export const TEAM_DATA = [
 export const TWEETS_DATA = [
     {
         name: 'Etiam eget',
-        description: 'Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.',
+        description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
       
     },
@@ -83,7 +83,7 @@ export const TWEETS_DATA = [
     },
     {
         name: 'Etiam eget',
-        description: 'Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.',
+        description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
        
     },

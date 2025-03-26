@@ -22,8 +22,8 @@ const Roadmap = () => {
                 </div>
                 {ROADMAP_DATA.map((item, index) => (
                     <div key={index} className={` flex w-full items-start ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                        <div className={`relative md:w-1/2 w-full  rounded-lg hover:shadow-md ${index % 2 === 0 ? 'justify-end lg:pl-[75px] md:pl-9' : 'justify-start lg:pr-[75px] pr-5 lg:pl-9 '} :flex-row flex-col`}>
-                            <p className='md:text-sm text-xs font-normal max-md:mt-6'>{ item.phase}</p>
+                        <div className={`relative md:w-1/2 w-full  rounded-lg hover:shadow-md ${index % 2 === 0 ? 'justify-end lg:pl-[75px] md:pl-9' : 'justify-start lg:pr-[75px] pr-5 lg:pl-9'} :flex-row flex-col`}>
+                            <p className='md:text-sm text-xs font-normal max-md:mt-6 mb-2'>{ item.phase}</p>
                             <h2 className="lg:text-4xl text-2xl leading-[110%] font-semibold mb-2">{item.title}</h2>
                             <p className={`text-black font-normal md:text-base text-sm overflow-hidden transition-all duration-300 ${expanded === index ? 'max-h-full' : 'lg:max-h-[190px] max-h-20'}`}>{item.description}</p>
                             {item.description.length > 190 && (
@@ -32,7 +32,7 @@ const Roadmap = () => {
                                 </button>
                             )}
                         </div>
-                        <div className="md:size-14 size-10 bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold  md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2">
+                        <div className={` md:size-14 size-10 bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold  md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2`}>
                            <Image src="/assets/images/svg/roadmap-icon.svg" width={32} height={27} alt="arrow" className='md:w-8 md:h-7 size-6' />
                         </div>
                     </div>

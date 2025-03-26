@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CommonSlider = ({ data, title , isTweets }) => {
   return (
@@ -49,7 +50,10 @@ const CommonSlider = ({ data, title , isTweets }) => {
                     <p className={`text-sm font-normal`}>{ item.date}</p>
                   </div>
                   <p className={` ${isTweets ? 'text-left ' : 'text-center '}text-center  max-w-[407px] mx-auto`}>{item.description}</p>
-                  <p className={`underline font-normal text-sm pt-3 ${isTweets ? 'block' : 'hidden'}`}>Read More ...</p>
+                  <Link href="#">
+                  <p className={`underline font-normal text-sm pt-3  ${isTweets ? 'block' : 'hidden'}`}>Read More ...</p>
+                    
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

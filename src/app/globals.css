@@ -7,6 +7,10 @@
   src: url("/assets/fonts/modernofbcomp-bold.otf");
 }
 
+html, body{
+  scroll-behavior: smooth !important;
+}
+
 .ff-noto-serif {
   font-family: 'Noto Serif', serif;
 }

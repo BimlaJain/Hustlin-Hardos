@@ -19,7 +19,7 @@ const Faq = () => {
     };
 
     return (
-        <div id="faq" className=" text-black border-b-2">
+        <div className=" text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
                 <CommonHeading MyText="Faqs" />
             </div>

@@ -9,20 +9,14 @@
 
 html, body{
   scroll-behavior: smooth !important;
-}
-
-.ff-noto-serif {
-  font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .ff-moderno{
   font-family: "moderno";
 }
 
-.body-img{
- background-image: url("/assets/images/webp/bg.webp");
-}
 
-.team-bg{
+/* .team-bg{
   background-image: url("/assets/images/png/team-bg.png");
-}
+} */

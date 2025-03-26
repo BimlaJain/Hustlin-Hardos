@@ -14,7 +14,7 @@ const Roadmap = () => {
     return (
         <div id='roadmap'>
             <div className='container max-w-[1172px] mx-auto px-4'> 
-                <CommonHeading MyText='Roadmap'/>
+                <CommonHeading myText='RoadMap'/>
             </div>
             <div className='border-b-2 border-black w-full'></div>
             <div className="relative flex flex-col items-center container max-w-[1172px] mx-auto max-xl:px-4 pl-4 xl:border-x-2 lg:pt-[99px] pt-10 xl:pb-[186px] lg:pb-[120px] md:pb-[70px] pb-16">

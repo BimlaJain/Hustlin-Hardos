@@ -39,12 +39,13 @@ const CommonSlider = ({ data, title , isTweets }) => {
         >
           {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="">
-                <div className={`border-black p-[26px]  flex flex-col  ${index % 2 === 0 ? 'border-l-2 border-r-1 ' : 'border-l-1 border-r-2'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px] team-bg'}`}>
+              <div>
+                <div style={!isTweets ? { backgroundImage: `url('/assets/images/png/team-bg.png')`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}
+ className={`border-black p-[26px]  flex flex-col  ${index % 2 === 0 ? 'border-l-1 border-r-1 ' : 'border-l-1 border-r-1'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px] '}`}>
                  
                   <Image src="/assets/images/png/hustlin-short-pic.png" alt='hustlin' width={88} height={88} className={`size-[88px] rounded-full mx-auto mb-4 ${isTweets ? 'hidden' : 'block'}`} />
                  
-                  <h3 className={`md:text-4xl text-3xl text-center ${isTweets ? 'text-left text-black font-semibold pb-2' : 'text-center text-[#70675F] font-[900] pb-4'}`}>{item.name}</h3>
+                  <h3 className={`md:text-4xl text-3xl text-center ${isTweets ? 'text-left text-black font-semibold pb-2' : 'text-center text-[#70675F] font-[900] pb-4'}`}>{item.title}</h3>
                   <div className={`flex gap-[11px] pb-3 ${isTweets ? 'block' : 'hidden'}`}>
                     <Image src="/assets/images/svg/twitter.svg" alt='twitter' width={22} height={18} />
                     <p className={`text-sm font-normal`}>{ item.date}</p>

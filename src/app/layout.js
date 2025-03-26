@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`ff-noto-serif body-img antialiased`}
+        className={` antialiased bg-[url('/assets/images/webp/bg.webp')] bg-cover `} 
       >
         {children}
       </body>

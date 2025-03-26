@@ -5,16 +5,16 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
 import { STOCK_TICKERS, SOCIAL_ICONS, NAV_LINKS } from "@/utils/helper";
-const Navbar = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-black text-white">
-      <div className="overflow-hidden py-[14px] px-4 text-sm border-b border-black relative">
+    <div className=" text-white">
+      <div className="overflow-hidden py-[14px] max-w-[1920px] bg-black mx-auto px-4 text-sm border-b border-black relative">
         <Marquee gradient={false} speed={50}>
           {STOCK_TICKERS.map((item, index) => (
             <div key={index} className="md:mr-[62px] mr-6 flex items-center">
-              <span className="font-normal mr-2 text-base ">{item.name} </span>
+              <span className="font-normal mr-2 text-base ">{item.title} </span>
               <span className={`ml-1 px-1 py-[2px] border rounded-[5px] ${item.color}`}>{item.value}</span>
             </div>
           ))}
@@ -28,10 +28,10 @@ const Navbar = () => {
             <div className="md:flex hidden items-center space-x-[18px]">
               {SOCIAL_ICONS.map((icon, index) => (
                 <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                  <Image className="cursor-pointer hover:scale-125 transition-all duration-500" src={icon.img} alt={icon.name} width={24} height={24} />
+                  <Image className="cursor-pointer hover:scale-125 transition-all duration-500" src={icon.img} alt={icon.title} width={24} height={24} />
                 </Link>
               ))}
-              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold border border-black hover:bg-white cursor-pointer transition-all duration-500">
+              <button className="bg-yellow-400 text-black px-[6px] py-2 font-semibold border border-black hover:bg-white cursor-pointer transition-all duration-500">
                 CONNECT WALLET
               </button>
             </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className="flex space-x-3 mt-4">
             {SOCIAL_ICONS.map((icon, index) => (
               <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                <Image className="cursor-pointer hover:shadow-lg !transition-all !duration-500" src={icon.img} alt={icon.name} width={24} height={24} />
+                <Image className="cursor-pointer hover:shadow-lg !transition-all !duration-500" src={icon.img} alt={icon.title} width={24} height={24} />
               </Link>
             ))}
           </div>
@@ -73,4 +73,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

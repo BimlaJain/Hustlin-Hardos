@@ -17,7 +17,7 @@ export const ROADMAP_DATA = [
     },
     {
         title: 'No-Loss Gambling',
-        description: 'Each week, we will organize free to enter no-loss gambling, with 25% of royalties being distributed as prize pool in events such as marble races or blackjack/poker tournaments. Imagine being able to bet on your Hustlin’ Hardo in a virtual foot race against your friend’s hardos. Since those events are free to enter, you can’t lose anything - but you can win BIG!',
+        description: 'Each week, we will organize free to enter no-loss gambling, with 25% of royalties being distributed as prize pool in events such as marble races or blackjack/poker tourtitlents. Imagine being able to bet on your Hustlin’ Hardo in a virtual foot race against your friend’s hardos. Since those events are free to enter, you can’t lose anything - but you can win BIG!',
         phase: "Phase 4"
     },
     {
@@ -44,19 +44,19 @@ export const ROADMAP_DATA = [
 
 export const TEAM_DATA = [
     {
-        name: 'Executive Hardo',
+        title: 'Executive Hardo',
         description: 'Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant.',
     },
     {
-        name: 'Johnny Banjo',
+        title: 'Johnny Banjo',
         description: 'The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry.',
     },
     {
-        name: 'Executive Hardo',
+        title: 'Executive Hardo',
         description: 'Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant.',
     },
     {
-        name: 'Johnny Banjo',
+        title: 'Johnny Banjo',
         description: 'The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the printing industry.',
     },
 
@@ -64,25 +64,25 @@ export const TEAM_DATA = [
 
 export const TWEETS_DATA = [
     {
-        name: 'Etiam eget',
+        title: 'Etiam eget',
         description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
 
     },
     {
-        name: 'Venenatis.',
+        title: 'Venenatis.',
         description: 'Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.',
         date: "22/02/2022",
 
     },
     {
-        name: 'Quis vulputate.',
+        title: 'Quis vulputate.',
         description: 'Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.',
         date: "20/02/2022",
 
     },
     {
-        name: 'Etiam eget',
+        title: 'Etiam eget',
         description: 'Diam tellus arcu, amet ornare nulla ut scelersque et. Cum porta ultrices quam in.',
         date: "23/02/2022",
 
@@ -90,10 +90,10 @@ export const TWEETS_DATA = [
 ];
 
 export const COUNT_LIST = [
-    { name: "Etiam eget", endValue: 42 },
-    { name: "Tristique.", endValue: 42 },
-    { name: "Aliquet ac.", endValue: 42 },
-    { name: "Tincidunt.", endValue: 42 }
+    { title: "Etiam eget" },
+    { title: "Tristique.", },
+    { title: "Aliquet ac." },
+    { title: "Tincidunt." }
 ];
 
 export const FAQS = [
@@ -134,25 +134,25 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_ICONS = [
-    { name: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
-    { name: "twitter-two", img: "/assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
-    { name: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
-    { name: "media", img: "assets/images/svg/media.svg", link: "#" },
-    { name: "last", img: "assets/images/svg/last.svg", link: "#" }
+    { title: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
+    { title: "twitter-two", img: "/assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
+    { title: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
+    { title: "media", img: "assets/images/svg/media.svg", link: "#" },
+    { title: "last", img: "assets/images/svg/last.svg", link: "#" }
 ];
 
 export const STOCK_TICKERS = [
-    { name: "S&P", value: "-1.01%", color: "text-red-500" },
-    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
-    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
-    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
-    { name: "AXD 100", value: "+0.13%", color: "text-yellow-400" },
-    { name: "S&P", value: "-1.01%", color: "text-red-500" },
-    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
-    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
-    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
-    { name: "S&P", value: "-1.01%", color: "text-red-500" },
-    { name: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
-    { name: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
-    { name: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+    { title: "S&P", value: "-1.01%", color: "text-red-500" },
+    { title: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { title: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { title: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+    { title: "AXD 100", value: "+0.13%", color: "text-yellow-400" },
+    { title: "S&P", value: "-1.01%", color: "text-red-500" },
+    { title: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { title: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { title: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
+    { title: "S&P", value: "-1.01%", color: "text-red-500" },
+    { title: "Shanghai", value: "+0.87%", color: "text-yellow-400" },
+    { title: "FTSE 100", value: "+0.13%", color: "text-yellow-400" },
+    { title: "Brent Crude Oil", value: "-0.24%", color: "text-red-500" },
 ];

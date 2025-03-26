@@ -46,7 +46,7 @@ const Minting = () => {
   return (
     <div id="minting" className=" border-b-2">
       <div className="container max-w-[1172px] mx-auto px-4">
-     <CommonHeading MyText="Minting"/>
+     <CommonHeading myText="Minting"/>
       </div>
       <div className='border-b-2 border-black w-full'></div>
       <div className="container max-w-[1172px] mx-auto px-4">
@@ -89,12 +89,12 @@ const Minting = () => {
       </div>
       <div className='border-b-2 border-black w-full'></div>
       <div className="container max-w-[832px] mx-auto px-4">
-        <div ref={ref} className="grid md:grid-cols-4 grid-cols-2 border-t border-black text-center py-4">
+        <div ref={ref} className="grid md:grid-cols-4 grid-cols-2 border-t border-black py-4">
           {COUNT_LIST.map((item, index) => (
             <div key={index} className=" p-2">
-              <p className="text-2xl font-normal">{item.name}</p>
-              <h3 className="text-4xl font-bold pt-2">
-                {inView ? <CountUp start={0} end={item.endValue} duration={3} /> : 0}
+              <p className="text-2xl font-normal">{item.title}</p>
+              <h3 className="text-4xl text-left font-bold pt-2">
+                {inView ? <CountUp start={0} end={42} duration={3} /> : 0}
               </h3>
             </div>
           ))}

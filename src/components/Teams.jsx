@@ -2,7 +2,7 @@ import React from 'react'
 import { TEAM_DATA } from '@/utils/helper'
 import CommonSlider from './common/CommonSlider'
 
-const Team = () => {
+const Teams = () => {
     return (
         <div id='team'>
             <CommonSlider data={TEAM_DATA} title="Team" isTweets={false} />
@@ -10,4 +10,4 @@ const Team = () => {
     )
 }
 
-export default Team
+export default Teams

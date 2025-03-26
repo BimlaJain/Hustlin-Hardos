@@ -10,28 +10,28 @@ const Navbar = () => {
 
   return (
     <div className="bg-black text-white">
-      <div className="overflow-hidden py-2 px-4 text-sm border-b border-black relative">
+      <div className="overflow-hidden py-[14px] px-4 text-sm border-b border-black relative">
         <Marquee gradient={false} speed={50}>
           {STOCK_TICKERS.map((item, index) => (
-            <div key={index} className="mr-[62px] flex items-center">
+            <div key={index} className="mx-4 flex items-center">
               <span className="font-normal mr-2 text-base uppercase">{item.name} </span>
-              <span className={`ml-1 px-2 py-1 border rounded-[5px] ${item.color}`}>{item.value}</span>
+              <span className={`ml-1 px-1 py-[2px] border rounded-[5px] ${item.color}`}>{item.value}</span>
             </div>
           ))}
         </Marquee>
       </div>
       <div className="body-img border-b border-black">
-        <div className="container mx-auto max-w-[1172px]">
+        <div className="container mx-auto">
           <div className="flex items-center justify-between max-w-[658px] ml-auto px-4 py-3">
-            <Link href="#">  <h1 className="text-2xl font-normal text-black ff-moderno">Hustlin' Hardos</h1></Link>
+            <Link href="#">  <h1 className="text-xl font-bold text-black ff-moderno">Hustlin' Hardos</h1></Link>
           
-            <div className="md:flex hidden items-center space-x-3">
+            <div className="md:flex hidden items-center space-x-[18px]">
               {SOCIAL_ICONS.map((icon, index) => (
                 <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                  <Image className="cursor-pointer" src={icon.img} alt={icon.name} width={24} height={24} />
+                  <Image className="cursor-pointer" src={`/assets/images/svg/${icon.name}.svg`} alt={icon.name} width={24} height={24} />
                 </Link>
               ))}
-              <button className="bg-[#FFD600] text-black px-4 py-[10px] text-sm font-semibold border border-black hover:bg-yellow-500 transition-all">
+              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all">
                 CONNECT WALLET
               </button>
             </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="border-b border-black body-img">
-        <div className="hidden md:flex justify-center ">
+        <div className="hidden md:flex justify-center space-x-6">
           {NAV_LINKS.map((item, index) => (
             <Link key={index} href="#" className="px-4 py-2 border-x-1 text-black border-black transition-all">
               {item}
@@ -59,9 +59,7 @@ const Navbar = () => {
           ))}
           <div className="flex space-x-3 mt-4">
             {SOCIAL_ICONS.map((icon, index) => (
-              <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                <Image className="cursor-pointer" src={icon.img} alt={icon.name} width={24} height={24} />
-              </Link>
+              <Image key={index} src={`/assets/images/svg/${icon}.svg`} alt={icon} width={24} height={24} />
             ))}
           </div>
           <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all mt-4">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
-import { STOCK_TICKERS,SOCIAL_ICONS,NAV_LINKS } from "@/utils/helper";
+import { STOCK_TICKERS, SOCIAL_ICONS, NAV_LINKS } from "@/utils/helper";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,18 +24,18 @@ const Navbar = () => {
         <div className="container mx-auto max-w-[1172px] px-4">
           <div className="flex items-center justify-between max-w-[658px] ml-auto py-3">
             <Link href="#">  <h1 className="text-2xl font-normal text-black ff-moderno">Hustlin' Hardos</h1></Link>
-          
+
             <div className="md:flex hidden items-center space-x-[18px]">
               {SOCIAL_ICONS.map((icon, index) => (
                 <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
                   <Image className="cursor-pointer hover:scale-125 transition-all duration-500" src={icon.img} alt={icon.name} width={24} height={24} />
                 </Link>
               ))}
-              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold border border-black hover:bg-white cursor-pointer transition-all">
+              <button className="bg-yellow-400 text-black px-4 py-2 font-semibold border border-black hover:bg-white cursor-pointer transition-all duration-500">
                 CONNECT WALLET
               </button>
             </div>
-            <button className="md:hidden text-black text-2xl transition-all duration-500" onClick={() => setIsOpen(!isOpen)}>
+            <button className="md:hidden text-black text-2xl transition-all duration-500 ease-linear" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <FiX /> : <FiMenu />}
             </button>
           </div>
@@ -44,26 +44,27 @@ const Navbar = () => {
       <div className="border-b border-black body-img">
         <div className="hidden md:flex justify-center ">
           {NAV_LINKS.map((item, index) => (
-            <Link key={index} href={item.link} className="px-4 py-2 border-x-1 hover:text-red-500 text-black border-black transition-all">
+            <Link key={index} href={item.link} className="px-4 py-2 border-x-1 hover:text-red-500 text-black border-black transition-all duration-500">
               {item.title}
             </Link>
           ))}
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden body-img border-b border-black flex flex-col items-center py-4 space-y-2">
+        <div className="md:hidden body-img border-b border-black flex flex-col items-center py-4 space-y-2 !transition-all !duration-500 ease-linear">
           {NAV_LINKS.map((item, index) => (
-            <Link key={index} href={item.link} className="px-4 py-2 text-black hover:text-red-500 transition-all">
+            <Link key={index} href={item.link} className="px-4 py-2 text-black hover:text-red-500 transition-all duration-500">
               {item.title}
             </Link>
           ))}
           <div className="flex space-x-3 mt-4">
             {SOCIAL_ICONS.map((icon, index) => (
               <Link key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                <Image className="cursor-pointer hover:shadow-lg" src={icon.img} alt={icon.name} width={24} height={24} />
-              </Link>            ))}
+                <Image className="cursor-pointer hover:shadow-lg !transition-all !duration-500" src={icon.img} alt={icon.name} width={24} height={24} />
+              </Link>
+            ))}
           </div>
-          <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all mt-4">
+          <button className="bg-yellow-400 text-black px-4 py-2 font-semibold rounded border border-black hover:bg-yellow-500 transition-all duration-500 mt-4">
             CONNECT WALLET
           </button>
         </div>

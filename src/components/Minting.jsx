@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import { COUNT_LIST } from "@/utils/helper";
+import CommonHeading from "./common/CommonHeading";
 const Minting = () => {
   const [count, setCount] = useState(100);
   const [timeLeft, setTimeLeft] = useState("40:15:12:10");
@@ -45,7 +46,7 @@ const Minting = () => {
   return (
     <div className="  border-b-2">
       <div className="container max-w-[1172px] mx-auto px-4">
-        <h1 className="lg:text-[80px] md:text-6xl text-left text-5xl leading-[104%] font-normal lg:py-18 md:py-10 py-7 px-4">Minting</h1>
+     <CommonHeading MyText="Minting"/>
       </div>
       <div className='border-b-2 border-black w-full'></div>
       <div className="container max-w-[1172px] mx-auto px-4">

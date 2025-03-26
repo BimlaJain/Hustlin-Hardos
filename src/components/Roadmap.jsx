@@ -2,6 +2,7 @@
 import { ROADMAP_DATA } from '@/utils/helper';
 import React , {useState} from 'react';
 import Image from 'next/image';
+import CommonHeading from './common/CommonHeading';
 
 const Roadmap = () => {
     const [expanded, setExpanded] = useState(null);
@@ -13,7 +14,7 @@ const Roadmap = () => {
     return (
         <div>
             <div className='container max-w-[1172px] mx-auto px-4'> 
-                <h2 className="lg:text-[80px] md:text-6xl text-5xl leading-[104%] font-normal  lg:py-[89px] md:py-10 py-7 text-black ">RoadMap</h2>
+                <CommonHeading MyText='Roadmap'/>
             </div>
             <div className='border-b-2 border-black w-full'></div>
             <div className="relative flex flex-col items-center container max-w-[1172px] mx-auto px-4 xl:border-x-2 lg:pt-[99px] pt-10 xl:pb-[220px] lg:pb-[120px] md:pb-[150px] pb-24">

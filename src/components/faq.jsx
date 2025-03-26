@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { FAQS } from "@/utils/helper";
+import CommonHeading from "./common/CommonHeading";
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(0);
     const contentRefs = useRef([]);
@@ -20,7 +21,7 @@ const Faq = () => {
     return (
         <div className=" text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
-                <h2 className="lg:text-[80px] md:text-6xl text-5xl font-normal leading-[104%] mb-6 lg:py-18 md:py-10 py-7">Faqs</h2>
+             <CommonHeading MyText="Faqs"/>
             </div>
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">

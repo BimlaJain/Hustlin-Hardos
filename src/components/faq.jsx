@@ -21,7 +21,7 @@ const Faq = () => {
     return (
         <div className=" text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
-             <CommonHeading MyText="Faqs"/>
+                <CommonHeading MyText="Faqs" />
             </div>
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">

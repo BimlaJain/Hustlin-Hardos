@@ -7,7 +7,8 @@ import Header from '@/components/common/Header'
 import Roadmap from '@/components/Roadmap'
 import LatestTweets from '@/components/LatestTweets'
 import Team from '@/components/team'
-import Faq from '@/components/Faq'
+import Faq from '@/components/faq'
+
 const page = () => {
   return (
     <div>

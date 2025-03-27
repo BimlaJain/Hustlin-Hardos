@@ -137,8 +137,8 @@ export const SOCIAL_ICONS = [
     { title: "discord", img: "assets/images/svg/discord.svg", link: "https://discord.com" },
     { title: "twitter-two", img: "/assets/images/svg/twitter-two.svg", link: "https://twitter.com" },
     { title: "instagram", img: "assets/images/svg/instagram.svg", link: "https://instagram.com" },
-    { title: "media", img: "assets/images/svg/media.svg", link: "#" },
-    { title: "last", img: "assets/images/svg/last.svg", link: "#" }
+    { title: "media", img: "assets/images/svg/media.svg", link: "https://www.media.net/" },
+    { title: "last", img: "assets/images/svg/last.svg", link: "https://opensea.io/" }
 ];
 
 export const STOCK_TICKERS = [

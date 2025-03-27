@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
@@ -8,6 +8,9 @@ import { STOCK_TICKERS, SOCIAL_ICONS, NAV_LINKS } from "@/utils/helper";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
   return (
     <div className=" text-white">
       <div className="overflow-hidden py-[14px] max-w-[1920px] bg-black mx-auto px-4 text-sm border-b border-black relative">
@@ -51,7 +54,7 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden body-img border-b border-black flex flex-col items-center py-4 space-y-2 !transition-all !duration-500 ease-linear">
+        <div onClick={() => setIsOpen(!isOpen)} className="md:hidden body-img border-b border-black flex flex-col min-h-screen overflow-hidden items-center justify-center -mt-[63px] py-4 space-y-2 !transition-all !duration-500 ease-linear">
           {NAV_LINKS.map((item, index) => (
             <Link key={index} href={item.link} className="px-4 py-2 text-black hover:text-red-500 transition-all duration-500">
               {item.title}

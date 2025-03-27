@@ -62,7 +62,7 @@ const Minting = () => {
               >
                 -
               </button>
-              <span className="border-l-2 border-r-2 border-black py-1 text-center font-semibold leading-[100%] text-4xl px-6">{count}</span>
+              <span className="border-l-2 border-r-2 border-black py-1 text-center w-[112px] font-semibold leading-[100%] text-4xl px-6">{count}</span>
               <button
                 className=" px-6 text-4xl text-center py-1 cursor-pointer"
                 onClick={() => setCount(count + 1)}

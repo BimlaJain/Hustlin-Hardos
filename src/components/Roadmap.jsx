@@ -33,8 +33,8 @@ const Roadmap = () => {
                                 </button>
                             )}
                         </div>
-                        <div className={` md:size-14 size-10 bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold  md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2`}>
-                           <Image src="/assets/images/svg/roadmap-icon.svg" width={32} height={27} alt="arrow" className='md:w-8 md:h-7 size-6' />
+                        <div className={` md:size-14 w-11 h-[39px] bg-white border-2 border-black rounded-full flex items-center justify-center text-lg font-bold  md:absolute relative md:transform md:-translate-x-1/2 md:left-1/2`}>
+                           <Image src="/assets/images/svg/roadmap-icon.svg" width={32} height={27} alt="arrow" className='md:w-8 md:h-7 size-5' />
                         </div>
                     </div>
                 ))}
